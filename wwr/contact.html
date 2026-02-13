@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rafting and Beyond</title>
+    <meta name="description" content="A page for contact informations about Rafting and Beyond">
+    <meta name="author" content="Juliana Coutinho Rodrigues">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/rafting-logo.png" alt="Rafting Company's logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Rafting and Beyond Company</h2>
+
+        <p> 350 Lake Rd, Unit 711</p>
+        <p>Macon, GA 30223</p>
+        <p> (903) 271-4735</p>
+        <p> raftingandbeyond@gmail.com</p>
+
+        <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.628251139525!2d-43.402980725579845!3d-23.000693779189078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdc8dc1a5e667%3A0x49d2b87ba5fd70d8!2sTemplo%20do%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1770988298070!5m2!1spt-BR!2sbr"
+              width="350" height="250" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <section>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Purpose of Message:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="general" required> General
+                        Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation
+                        Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website
+                        Suggestion</label>
+                </div>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="newsletter"> Please subscribe me to the
+                        monthly
+                        newsletter</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section>
+
+            <h2>We are here to serve you!</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/employee-1.jpg" alt="Picture of the employee 1" width="120">
+                    <figcaption>Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-2.jpg" alt="Picture of the employee 2" width="120">
+                    <figcaption>Attendant</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-3.jpg" alt=" A rough sea" width="120">
+                    <figcaption>Tour guide</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ◈ Rafting & Beyond ◈ Juliana Coutinho Rodrigues</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
