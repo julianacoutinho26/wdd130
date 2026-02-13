@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Rafting and Beyond</title>
+    <title>Contact Us | Rafting and Beyond</title>
     <meta name="description" content="A page for contact informations about Rafting and Beyond">
     <meta name="author" content="Juliana Coutinho Rodrigues">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <h2>Rafting and Beyond Company</h2>
+        <h1>Rafting and Beyond Company</h1>
 
         <p> 350 Lake Rd, Unit 711</p>
         <p>Macon, GA 30223</p>
@@ -46,27 +46,35 @@
                 <label for="email">Your Email Address:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label>Purpose of Message:</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="purpose" value="general" required> General
-                        Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation
-                        Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website
-                        Suggestion</label>
-                </div>
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          required>
+                        <label for="purpose-general">General Inquiry</label>
+
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
+                        <label for="purpose-reservation">Reservation Question</label>
+
+                        <input type="radio" id="purpose-suggestion" name="purpose"
+                          value="suggestion">
+                        <label for="purpose-suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="newsletter"> Please subscribe me to the
-                        monthly
-                        newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                 </div>
 
                 <button type="submit">Send Message</button>
             </form>
+
+
         </section>
 
         <section>
